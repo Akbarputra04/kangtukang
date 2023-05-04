@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useState } from "react"
 
 const Header = () => {
@@ -10,15 +11,15 @@ const Header = () => {
 	}
 
   return (
-    <header className="fixed z-10 w-full bg-yellow-50">
+    <header className="sticky top-0 z-10 w-full bg-yellow-50">
       <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* lg+ */}
         <div className="relative px-4 mx-auto sm:px-6 lg:px-8">
           <nav className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
-              <a href="#" title="" className="flex">
-                <img className="w-auto h-8 lg:h-10" src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg" alt="" />
-              </a>
+              <Link href="/" title="" className="flex">
+                <img className="w-auto h-12 lg:h-16" src="./images/logo-complete.png" alt="" />
+              </Link>
             </div>
 
             <button type="button" className="inline-flex p-2 transition-all duration-200 rounded-md lg:hidden focus:bg-gray-800 hover:bg-gray-800" onClick={toggleMenu}>
@@ -28,16 +29,16 @@ const Header = () => {
             </button>
 
             <div className="hidden lg:flex lg:items-center lg:space-x-10">
-              <a href="#" title="" className="text-base font-medium"> Features </a>
+              <a href="#home" title="" className="text-base font-medium"> Home </a>
 
-              <a href="#" title="" className="text-base font-medium"> Solutions </a>
+              <a href="#jasa" title="" className="text-base font-medium"> Jasa Kami </a>
 
-              <a href="#" title="" className="text-base font-medium"> Resources </a>
+              <a href="#portfolio" title="" className="text-base font-medium"> Portfolio </a>
 
-              <a href="#" title="" className="text-base font-medium"> Pricing </a>
+              <Link href="/tentang" title="" className="text-base font-medium"> Tentang </Link>
             </div>
 
-            <a href="#" title="" className="items-center justify-center hidden px-6 py-3 text-base font-semibold text-black transition-all duration-200 bg-yellow-400 border border-transparent rounded-full lg:inline-flex hover:bg-yellow-500 focus:bg-yellow-500" role="button"> Join Now </a>
+            <a href="https://wa.me/+62895422399000" title="" className="items-center justify-center hidden px-6 py-3 text-base font-semibold text-white transition-all duration-200 bg-orange-500 border border-transparent rounded-full lg:inline-flex hover:bg-orange-600 focus:bg-orange-600" role="button">Hubungi Kami</a>
           </nav>
         </div>
 
@@ -51,17 +52,17 @@ const Header = () => {
 
           <div className="flex flex-col gap-10 flex-grow h-full">
             <nav className="flex flex-col mt-10 space-y-2">
-              <a href="#" title="" className="flex w-full py-2 font-medium justify-center transition-all duration-200 focus:text-opacity-70"> Features </a>
+              <a href="#home" title="" className="flex w-full py-2 font-medium justify-center transition-all duration-200 focus:text-opacity-70"> Home </a>
 
-              <a href="#" title="" className="flex w-full py-2 font-medium justify-center transition-all duration-200 focus:text-opacity-70"> Solutions </a>
+              <a href="#jasa" title="" className="flex w-full py-2 font-medium justify-center transition-all duration-200 focus:text-opacity-70"> Jasa Kami </a>
 
-              <a href="#" title="" className="flex w-full py-2 font-medium justify-center transition-all duration-200 focus:text-opacity-70"> Resources </a>
+              <a href="#portfolio" title="" className="flex w-full py-2 font-medium justify-center transition-all duration-200 focus:text-opacity-70"> Portfolio </a>
 
-              <a href="#" title="" className="flex w-full py-2 font-medium justify-center transition-all duration-200 focus:text-opacity-70"> Pricing </a>
+              <Link href="/tentang" title="" className="flex w-full py-2 font-medium justify-center transition-all duration-200 focus:text-opacity-70"> Tentang </Link>
             </nav>
 
             <div className="flex flex-col items-center">
-              <a href="#" title="" className="inline-flex items-center justify-center w-auto px-6 py-3 mt-auto text-base font-semibold text-black transition-all duration-200 bg-yellow-400 border border-transparent rounded-full hover:bg-yellow-500 focus:bg-yellow-500" role="button"> Join Now </a>
+              <a href="https://wa.me/+62895422399000" title="" className="inline-flex items-center justify-center w-auto px-6 py-3 mt-auto text-base font-semibold text-black transition-all duration-200 bg-yellow-400 border border-transparent rounded-full hover:bg-yellow-500 focus:bg-yellow-500" role="button">Hubungi Kami</a>
             </div>
           </div>
         </nav>

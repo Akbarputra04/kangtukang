@@ -1,10 +1,6 @@
-import Header from "./header"
-
 const Hero = () => {
   return (
-    <div className="relative">
-      <Header />
-
+    <div id="home" className="relative">
       <section className="bg-yellow-50 overflow-hidden">
         <div className="flex flex-col lg:flex-row lg:items-stretch lg:min-h-[800px]">
           <div className="relative flex items-center justify-center w-full lg:order-2 lg:w-7/12">
@@ -13,35 +9,14 @@ const Hero = () => {
             </div>
 
             <div className="relative px-4 pt-24 pb-16 text-center sm:px-6 md:px-24 2xl:px-32 lg:py-24 lg:text-left">
-              <h1 className="text-4xl font-bold text-black sm:text-6xl xl:text-8xl">
-                Get it done.<br />
-                Fast, Easy.
-              </h1>
-              <p className="mt-8 text-xl text-black">We help you to make your remote work life easier. Build a distruction free working experience.</p>
-
-              <form action="#" method="POST" className="max-w-xl mx-auto mt-8 bg-white lg:mx-0 sm:bg-transparent lg:mt-12 rounded-xl">
-                <div className="p-4 sm:p-2 sm:bg-white sm:border-2 sm:border-transparent sm:rounded-full sm:focus-within:border-orange-500 sm:focus-within:ring-1 sm:focus-within:ring-orange-500">
-                  <div className="flex flex-col items-start sm:flex-row">
-                    <div className="flex-1 w-full min-w-0">
-                      <div className="relative text-gray-400 focus-within:text-gray-600">
-                        <label className="sr-only"></label>
-                        <input
-                          type="email"
-                          name="email"
-                          id="email"
-                          placeholder="Enter email to get started"
-                          className="block w-full px-4 py-4 text-base text-center text-black placeholder-gray-500 transition-all duration-200 border-transparent rounded-full sm:text-left focus:border-transparent focus:ring-0 caret-orange-500"
-                        />
-                      </div>
-                    </div>
-
-                    <button type="submit" className="inline-flex items-center justify-center w-full px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-orange-500 border border-transparent rounded-full sm:w-auto sm:ml-4 sm:mt-0 hover:bg-orange-600 focus:bg-orange-600">
-                      Try 14 days free
-                    </button>
-                  </div>
-                </div>
-              </form>
-              <p className="mt-5 text-base text-black">Instant access . No credit card required</p>
+              <h1 className="text-4xl font-bold text-black sm:text-6xl xl:text-7xl">Layanan Jasa Tukang dan Konstruksi Bangunan</h1>
+              <p className="my-8 text-xl text-black">layanan jasa renovasi dan bangun rumah dari mendesain, merencanakan, merenovasi dan membangun dengan teliti, hati-hati, sepenuh hati, dan bermutu tinggi.</p>
+              <a href="https://wa.me/+62895422399000" className="inline-flex items-center justify-center w-full px-4 py-4 font-semibold text-white transition-all duration-200 bg-orange-500 border border-transparent rounded-full sm:w-auto sm:mt-0 hover:bg-orange-600 focus:bg-orange-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-whatsapp mr-2" viewBox="0 0 16 16">
+                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                </svg>
+                Konsultasi Gratis
+              </a>
             </div>
 
             {/* <div className="absolute right-0 z-10 -bottom-16 lg:top-24 lg:-left-20">
@@ -51,7 +26,7 @@ const Hero = () => {
 
           <div className="relative w-full overflow-hidden lg:order-1 h-96 lg:h-auto lg:w-5/12">
             <div className="absolute inset-0">
-              <img className="object-cover w-full h-full scale-150" src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/3/man-working-on-laptop.jpg" alt="" />
+              <img className="w-full h-full" src="/images/hero.jpg" alt="" />
             </div>
 
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
@@ -62,9 +37,9 @@ const Hero = () => {
                   <svg className="w-10 h-10 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
                   </svg>
-                  <h2 className="font-bold text-white text-7xl ml-2.5">395</h2>
+                  <h2 className="font-bold text-white text-7xl ml-2.5">100+</h2>
                 </div>
-                <p className="max-w-xs mt-1.5 text-xl text-white">Professionals have organized their desk via PostCra</p>
+                <p className="max-w-xs mt-1.5 text-xl text-white">Klien telah bekerjasama<br/>dengan kami</p>
               </div>
             </div>
           </div>
